@@ -1,0 +1,183 @@
+:root {
+  color: #0c1b33;
+  background: #0c0f1d;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 15% 20%, rgba(103, 148, 255, 0.14), transparent 35%),
+    radial-gradient(circle at 80% 10%, rgba(255, 119, 184, 0.2), transparent 30%),
+    linear-gradient(135deg, #05060d 0%, #0a1124 45%, #0b0f20 100%);
+  color: #e6edf7;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 20px 96px;
+}
+
+.hero h1 {
+  margin: 12px 0 10px;
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.hero .lede {
+  color: #b8c1d8;
+  max-width: 680px;
+  font-size: 17px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: #8fb5ff;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.cta-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 12px 16px;
+  font-weight: 600;
+  transition: transform 120ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.primary {
+  background: linear-gradient(120deg, #4a8dff, #7c9cff);
+  color: #0b0f1d;
+  box-shadow: 0 10px 30px rgba(98, 151, 255, 0.3);
+}
+
+.secondary {
+  background: #0f162b;
+  color: #f5f8ff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ghost {
+  background: transparent;
+  color: #e6edf7;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.panel {
+  margin-top: 56px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 26px 24px 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin: 0;
+  color: #c3cfe8;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.plan-card {
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.plan-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.plan-name {
+  margin: 0;
+  color: #8fb5ff;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.plan-price {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.plan-detail {
+  margin: 0;
+  color: #c3cfe8;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #7f8cab;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .page {
+    padding: 32px 16px 64px;
+  }
+}
