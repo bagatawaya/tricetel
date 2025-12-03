@@ -1,1 +1,30 @@
-import React from 'react';export default function App(){return <div style={{padding:20}}>Trice Demo UI Placeholder</div>}
+import React, { useState } from 'react';
+import AgentList from './pages/AgentList';
+import AgentDetail from './pages/AgentDetail';
+import AgentBuilder from './pages/AgentBuilder';
+
+export default function App() {
+  const [page, setPage] = useState<'list' | 'detail' | 'builder'>('list');
+
+  const renderPage = () => {
+    switch (page) {
+      case 'detail':
+        return <AgentDetail />;
+      case 'builder':
+        return <AgentBuilder />;
+      default:
+        return <AgentList />;
+    }
+  };
+
+  return (
+    <div>
+      <nav style={{ padding: '10px', borderBottom: '1px solid #ccc' }}>
+        <button onClick={() => setPage('list')}>Agents</button>
+        <button onClick={() => setPage('detail')}>Detail</button>
+        <button onClick={() => setPage('builder')}>Builder</button>
+      </nav>
+      {renderPage()}
+    </div>
+  );
+}
