@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AgentList from './pages/AgentList';
+import './App.css';
 import AgentDetail from './pages/AgentDetail';
 import AgentBuilder from './pages/AgentBuilder';
 import Sidebar from './components/Sidebar';
